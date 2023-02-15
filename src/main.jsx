@@ -8,6 +8,7 @@ import { ToastContainer } from "react-toastify";
 //Style
 import "./Styles/App.scss";
 import "./Styles/TailWind.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //redux
 import { Provider } from "react-redux";

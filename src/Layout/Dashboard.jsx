@@ -58,7 +58,7 @@ const Dashboard = () => {
 
   function handleDeleteAcount() {
     let confirmation = confirm(
-      "Are You Sure To Delete Your Account? \nYour data cannot be restored!"
+      "Are You Sure To Delete Your Account? \n Your data cannot be restored!"
     );
     if (confirmation) {
       toast("Your Account Was Deleted", { type: "info" });
