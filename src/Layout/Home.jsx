@@ -16,9 +16,9 @@ const Home = () => {
     <div className="landingPage min-h-screen">
       <div className="blackCover">
         <Navbar />
-        <div className="absolute container inset-0 grid place-items-center">
+        <div className="absolute inset-0 grid place-items-center">
             <Box className="text-white flex flex-col items-center justify-between">
-              <h1 className="text-6xl font-semibold ">Developer Connector</h1>
+              <h1 className="text-7xl font-bold">Developer Connector</h1>
               <p className="text-2xl py-10"> Create a developer profile/portfolio, share posts and get help from other developers</p>
               <div className="flex gap-3">
                 <Link className="button rounded opacity-90 py-1 text-white bg-cyan-600" to="register">
