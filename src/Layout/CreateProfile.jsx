@@ -73,7 +73,7 @@ const navigate = useNavigate();
     <div>
       <ProfileNavbar />
       <form onSubmit={handleSubmit} className="w-2/3 continer mx-auto mt-10">
-        <h2 className="text-6xl font-bold text-zinc-600">Create Your Profile</h2>
+        <h2 className="text-6xl font-bold text-cyan-600">Create Your Profile</h2>
         <p className="py-6 text-2xl font-semibold">
           <i className="fa-solid fa-user-pen pr-3"></i> Let's get some
           information to make your profile
@@ -204,7 +204,7 @@ const navigate = useNavigate();
               </span>
               <span className="flex items-center gap-5">
                 <label htmlFor="facebookLink">
-                  <i className="fa-brands fa-facebook fa-2xl text-zinc-700"></i>
+                  <i className="fa-brands fa-facebook fa-2xl text-cyan-700"></i>
                 </label>
                 <TextField
                   id="facebookLink"
@@ -234,7 +234,7 @@ const navigate = useNavigate();
               </span>
               <span className="flex items-center gap-6">
                 <label htmlFor="linkedinLink">
-                  <i className="fa-brands fa-linkedin fa-2xl text-zinc-600"></i>
+                  <i className="fa-brands fa-linkedin fa-2xl text-cyan-600"></i>
                 </label>
                 <TextField
                   id="linkedinLink"
@@ -267,7 +267,7 @@ const navigate = useNavigate();
         </div>
         <button
           type="submit"
-          className="button mt-7 mr-7 mb-20 text-white bg-zinc-600"
+          className="button mt-7 mr-7 mb-20 text-white bg-cyan-600"
         >
           Submit
         </button>

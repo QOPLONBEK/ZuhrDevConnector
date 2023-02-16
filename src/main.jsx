@@ -4,18 +4,19 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import 'react-toastify/dist/ReactToastify.css'
 import { ToastContainer } from "react-toastify";
+import axios from "axios";
+import { Provider } from "react-redux";
 
 //Style
 import "./Styles/App.scss";
 import "./Styles/TailWind.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import'./Styles/fonts.css'
 
 //redux
-import { Provider } from "react-redux";
 import store from "./store";
 
 //axios
-import axios from "axios";
 axios.defaults.baseURL = "https://nt-devconnector.onrender.com";
 axios.defaults.headers.common["Content-Type"] = "application/json";
 let token = localStorage.getItem("token")

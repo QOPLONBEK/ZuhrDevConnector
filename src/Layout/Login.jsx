@@ -56,10 +56,12 @@ const Login = () => {
               id="outlined-basic2"
               name="email"
               fullWidth
+              size="small"
               type="email"
               placeholder="Email Address"
               variant="outlined"
               value={values.email}
+              color="success"
               onChange={handleInputChange}
             />
           <TextField
@@ -67,6 +69,7 @@ const Login = () => {
             fullWidth
             name="password"
             type="password"
+            size="small"
             placeholder="Password"
             variant="outlined"
             value={values.password}

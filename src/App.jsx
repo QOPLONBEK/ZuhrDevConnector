@@ -4,7 +4,7 @@ import AddExperience from "./Layout/AddExperience";
 import CreateProfile from "./Layout/CreateProfile";
 import Dashboard from "./Layout/Dashboard";
 import EditProfile from "./Layout/EditProfile";
-import Landing from "./Layout/Home";
+import Home from "./Layout/Home";
 import Login from "./Layout/Login";
 import NoPage from "./Layout/NoFund";
 import Posts from "./Layout/Posts";
@@ -16,7 +16,7 @@ import UserProfile from "./Layout/UserProfile";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Landing />} />
+      <Route path="/" element={<Home />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
       <Route path="/profiles" element={<Profiles />} />

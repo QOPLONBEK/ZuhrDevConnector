@@ -6,9 +6,7 @@ import { toast } from "react-toastify";
 import Navbar from "../Components/Navbar";
 
 const Register = () => {
-
   const navigate = useNavigate()
-  
   const [values, setValues] = useState({
     name: "",
     email: "",

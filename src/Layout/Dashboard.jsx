@@ -92,11 +92,11 @@ const Dashboard = () => {
             </div>
             <h3 className="py-8 text-3xl font-semibold">Experience Credentials</h3>
             <table className="table-auto bg-gray-100">
-              <thead className="text-2xl border-b-2 border-white py-3">
-                <tr className="text-lg text-bold">
+              <thead className="text-3xl border-b-2 border-white py-3">
+                <tr className="text-xl text-bold">
                   <th className="py-3 px-3 border-r-2 border-white border-b-4">Company</th>
-                  <th className="py-3 px-3 border-r-2 border-white border-b-4">Title</th>
-                  <th className="py-3 px-3 border-r-2 border-white border-b-4">Years</th>
+                  <th className="py-3 px-4 border-r-2 border-white border-b-4">Title</th>
+                  <th className="py-3 px-4 border-r-2 border-white border-b-4">Years</th>
                   <th>
                     
                   </th>
@@ -132,12 +132,12 @@ const Dashboard = () => {
               </tbody>
             </table>
             <h3 className="py-8 text-3xl font-semibold"> Education Credentials</h3>
-            <table className="table-auto bg-gray-100">
-              <thead className="text-lg text-bold border-b-2 border-white py-3">
+            <table className="table-auto text-l bg-gray-100">
+              <thead className="text-bold border-b-2 border-white py-3">
                 <tr>
-                  <th className="py-3 px-5 border-r-2 border-white border-b-2">School</th>
-                  <th className="py-3 px-5 border-r-2 border-white border-b-2">Degree</th>
-                  <th className="py-3 px-5 border-r-2 border-white border-b-2">Years</th>
+                  <th className="py-3 px-4 border-r-2 border-white border-b-2">School</th>
+                  <th className="py-3 px-4 border-r-2 border-white border-b-2">Degree</th>
+                  <th className="py-3 px-4 border-r-2 border-white border-b-2">Years</th>
                   <th></th>
                 </tr>
               </thead>
@@ -146,13 +146,13 @@ const Dashboard = () => {
                   ? userData?.education?.map?.((edu) => {
                       return (
                         <tr key={crypto.randomUUID()}>
-                          <td className="text-lg p-3 border-r-2 border-b-2 border-white">
+                          <td className="text-sm p-2 border-r-2 border-b-2 border-white">
                             {edu?.school ? edu?.school : "No Information"}
                           </td>
-                          <td className="text-lg p-3 border-r-2 border-white border-b-2">
+                          <td className="text-sm p-3 border-r-2 border-white border-b-2">
                             {edu?.degree ? edu?.degree : "No Information"}
                           </td>
-                          <td className="text-lg p-3 border-r-2 border-white border-b-2">
+                          <td className="text-sm p-3 border-r-2 border-white border-b-2">
                             {edu?.from
                               ? moment(edu?.from).utc().format("DD-MM-YYYY")
                               : " "}
@@ -172,8 +172,8 @@ const Dashboard = () => {
                     }) : ""}
               </tbody>
             </table>
-            <button onClick={handleDeleteAcount} className="button bg-red-600 text-white mt-8">
-              <i className="fa-solid fa-user-slash"></i> Delete My Account
+            <button onClick={handleDeleteAcount} className="text-sm button bg-red-600 text-white mt-8">
+              <i className="fa-solid fw-sm fa-user-slash"></i> Delete My Account
             </button>
           </>
         ) : (
