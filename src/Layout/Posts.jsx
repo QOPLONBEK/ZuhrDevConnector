@@ -92,31 +92,30 @@ const Posts = () => {
     e.target.reset();
   }
   return (
-    <div className="container">
+    <div>
       <ProfileNavbar />
-      <form onSubmit={handleCreateComment} className="w-2/3 mx-auto mt-10">
-        <h2 className="text-6xl font-bold text-sky-600">Posts</h2>
+      <form onSubmit={handleCreateComment} className=" container w-2/3 mx-auto mt-12">
+        <h2 className="text-6xl font-bold text-cyan-600">Posts</h2>
         <p className="py-6 text-2xl font-semibold">
-          <i className="fa-solid fa-earth-americas pr-3"></i> Welcome to the
-          community
+          <i className="fa-solid fa-earth-americas pr-2"></i> Welcome to the community
         </p>
-        <span className="w-full block p-3 text-2xl font-semibold bg-sky-600 text-white rounded-md">
+        <span className="w-full block p-3 text-1xl font-semibold bg-cyan-600 text-white rounded-md">
           Say Something...
         </span>
         <TextareaAutosize
           minRows={5}
-          className="w-full border my-4 border-gray-600 p-3 rounded-md"
+          className=" contatiner w-full border my-4 border-gray-600 p-1 rounded-md"
           placeholder="Write a message..."
           name="text"
           onChange={handleInputChange}
         />
-        <button type="submit" className="button bg-sky-600 text-white">
+        <button type="submit" className="button bg-cyan-600 text-white">
           Submit
         </button>
       </form>
-      <div className="posts w-2/3 mx-auto my-14 flex flex-col gap-7">
+      <div className="posts w-2/3 container mx-auto my-14 flex flex-col gap-7">
         {posts?.length === 0 ? (
-          <div className="mt-20 mb-10">
+          <div className="mt-20 mb-10 container">
             <h2 className="text-4xl text-center font-bold mb-10">
               Loading posts...
             </h2>
@@ -138,7 +137,7 @@ const Posts = () => {
                     />
                   </Link>
                   <Link to={`/profile/${post?.user}`}>
-                    <h2 className=" text-xl font-semibold text-sky-600 text-center mt-2">
+                    <h2 className=" text-xl font-semibold text-cyan-600 text-center mt-2">
                       {post?.name}
                     </h2>
                   </Link>
@@ -147,7 +146,7 @@ const Posts = () => {
                   <p className="text-xl mb-4 overflow-hidden w-3/3">
                     {post?.text}
                   </p>
-                  <p className="opacity-60 font-semibold pb-2">
+                  <p className="opacity-60 font-semibold pb-3">
                     Posted on {moment(post?.date).utc().format("DD-MM-YYYY")}
                   </p>
                   <span className="flex items-center gap-3">
@@ -167,10 +166,10 @@ const Posts = () => {
                     </button>
                     <Link
                       to={`/posts/${post?._id}`}
-                      className="button flex items-center bg-sky-600 text-white"
+                      className="button flex items-center bg-cyan-600 text-white"
                     >
                       Discussion{" "}
-                      <span className="bg-white px-1 rounded ml-3 text-black">
+                      <span className="bg-transporent px-2 rounded ml-2 text-white">
                         {post?.comments?.length}
                       </span>
                     </Link>

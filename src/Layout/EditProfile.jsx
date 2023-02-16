@@ -65,10 +65,10 @@ const EditProfile = () => {
   return (
     <div>
       <ProfileNavbar />
-      <form className="w-2/3 mx-auto mt-10">
-        <h2 className="text-6xl font-bold text-sky-600">Edit Your Profile</h2>
+      <form className="w-2/3 container mx-auto mt-10">
+        <h2 className="text-6xl font-bold text-cyan-600">Edit Your Profile</h2>
         <p className="py-6 text-2xl font-semibold">
-          <i className="fa-solid fa-user-pen pr-3"></i>Add Some Changes To Your
+        <i class="fas fa-user"></i> Add Some Changes To Your
           Profile
         </p>
         <p className="pb-4 opacity-90">
@@ -208,7 +208,7 @@ const EditProfile = () => {
               </span>
               <span className="flex items-center gap-5">
                 <label htmlFor="facebookLink">
-                  <i className="fa-brands fa-facebook fa-2xl text-sky-700"></i>
+                  <i className="fa-brands fa-facebook fa-2xl text-cyan-700"></i>
                 </label>
                 <TextField
                   id="facebookLink"
@@ -238,7 +238,7 @@ const EditProfile = () => {
               </span>
               <span className="flex items-center gap-6">
                 <label htmlFor="linkedinLink">
-                  <i className="fa-brands fa-linkedin fa-2xl text-sky-600"></i>
+                  <i className="fa-brands fa-linkedin fa-2xl text-cyan-600"></i>
                 </label>
                 <TextField
                   id="linkedinLink"
@@ -272,7 +272,7 @@ const EditProfile = () => {
         <button
           onClick={handleSubmit}
           type="submit"
-          className="button mt-7 mr-7 mb-20 text-white bg-sky-600"
+          className="button mt-7 mr-7 mb-20 text-white bg-cyan-600"
         >
           Submit
         </button>

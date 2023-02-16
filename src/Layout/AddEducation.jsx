@@ -55,7 +55,7 @@ const AddEducation = () => {
     <div>
       <ProfileNavbar />
       <form className="w-2/3 container mx-auto mt-10">
-        <h2 className="text-6xl font-bold text-sky-600">Add Education</h2>
+        <h2 className="text-6xl font-bold text-zinc-600">Add Education</h2>
         <p className="py-6 text-2xl font-semibold">
           <i className="fa-solid fa-graduation-cap pr-3"></i> 
           Add any school or bootcamp that you have attended 
@@ -118,7 +118,7 @@ const AddEducation = () => {
         <button
           onClick={handleSubmit}
           type="submit"
-          className="button mt-7 mr-7 mb-20 text-white bg-sky-600"
+          className="button mt-7 mr-7 mb-20 text-white bg-zinc-600"
         >
           Submit
         </button>

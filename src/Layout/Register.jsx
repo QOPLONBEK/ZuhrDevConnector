@@ -55,11 +55,11 @@ const Register = () => {
     <div>
       <Navbar />
       <form onSubmit={handleRegister} className="w-2/3 mx-auto mt-10">
-        <h2 className="text-6xl font-bold text-sky-600">Sign Up</h2>
+        <h2 className="text-6xl font-bold text-cyan-600">Sign Up</h2>
         <p className="py-6 text-2xl font-semibold">
-          <i className="fa-solid fa-user pr-3"></i>Create Your Account
+          <i className="fa-solid align-center fa-user pr-4"></i>Create Your Account
         </p>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3">
           <TextField
             name="name"
             required
@@ -83,7 +83,7 @@ const Register = () => {
               value={values.email}
               onChange={handleInputChange}
             />
-            <p className="opacity-70">
+            <p className="opacity-60 py-2">
               This site uses Gravatar so if you want a profile image, use a
               Gravatar email
             </p>
@@ -113,12 +113,12 @@ const Register = () => {
             onChange={handleInputChange}
           />
         </div>
-        <button type="submit" className="button mt-4 text-white bg-sky-600">
+        <button type="submit" className="button mt-4 py-2 text-white bg-cyan-600">
           Register
         </button>
         <p className="text-lg mt-3">
           Already have an account?{" "}
-          <Link className="text-sky-600" to="/login">
+          <Link className="text-cyan-600" to="/login">
             Sign In
           </Link>
         </p>

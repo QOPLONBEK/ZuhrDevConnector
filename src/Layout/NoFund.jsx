@@ -7,7 +7,7 @@ const NoPages = () => {
     let token = localStorage.getItem("token")
     
   return (
-    <div className=''>
+    <div>
       {token ? <ProfileNavbar /> : <Navbar />}
       <div className="container w-2/2 mx-auto mt-20">
         <h1 className="text-6xl font-bold text-sky-600">

@@ -46,7 +46,7 @@ const Login = () => {
     <div>
       <Navbar />
       <form onSubmit={handleLogin} className="w-2/3 container mx-auto mt-10">
-        <h2 className="text-6xl font-bold text-sky-600">Sign In</h2>
+        <h2 className="text-6xl font-bold text-cyan-600">Sign In</h2>
         <p className="py-6 text-2xl font-semibold">
           <i className="fa-solid fa-user pr-3"></i>Sign In To Your Account
         </p>
@@ -73,12 +73,12 @@ const Login = () => {
             onChange={handleInputChange}
           />
         </div>
-        <button type="submit" className="button mt-4 text-white bg-sky-600">
+        <button type="submit" className="button mt-4 py-2 text-white bg-cyan-600">
           Log In
         </button>
         <p className="text-lg mt-3">
           Don't have an account yet?{" "}
-          <Link className="text-sky-600" to="/register">
+          <Link className="text-cyan-600" to="/register">
             Sign Up
           </Link>
         </p>

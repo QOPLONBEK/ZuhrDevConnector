@@ -70,34 +70,36 @@ const Dashboard = () => {
   return (
     <div>
       <ProfileNavbar />
-      <div className="w-2/3 mx-auto my-10">
-        <h2 className="text-5xl font-bold text-sky-600">Dashboard</h2>
+      <div className="container w-2/4 mx-auto my-10">
+        <h2 className="text-5xl font-bold text-cyan-600">Dashboard</h2>
         {userData?._id ? (
           <>
-            <p className="py-7 text-4xl font-bolder">
-              <i className="fa-solid fa-user pr-4"></i>Assalom alleykum, 
+            <p className="py-7 text-2xl font-bolder">
+              <i className="fa-solid fa-user pr-1"></i>Welcome  
               {" " + userData?.user ?. name}
             </p>
-            <div className="flex gap-3">
-              <Link to="/edit-profile" className="button bg-gray-200">
-                <i className="pr-2 fa-solid fa-user-pen"></i> Edit Profile
+            <div className="flex gap-3 py-2">
+              <Link to="/edit-profile" className="button text-sm hover:text-cyan-600 bg-gray-100">
+                <i class="fas fa-user-circle text-lg text-cyan-600"></i> Edit Profile
               </Link>
-              <Link to="/add-experience" className="button bg-gray-200">
-                <i className="pr-2 fa-solid fa-briefcase"></i> Add Experience
+              <Link to="/add-experience" className="button text-sm hover:text-cyan-600 bg-gray-100 ">
+              <i class="fab fa-black-tie text-lg text-cyan-600"></i> Add Experience
               </Link>
-              <Link to="/add-education" className="button bg-gray-200">
-                <i className="pr-2 fa-solid fa-graduation-cap"></i> Add
+              <Link to="/add-education" className="button text-sm hover:text-cyan-600 bg-gray-100">
+              <i class="fas fa-graduation-cap text-lg text-cyan-600"></i> Add
                 Education
               </Link>
             </div>
             <h3 className="py-8 text-3xl font-semibold">Experience Credentials</h3>
             <table className="table-auto bg-gray-100">
               <thead className="text-2xl border-b-2 border-white py-3">
-                <tr>
-                  <th className="py-3 px-5 border-r-2 border-white border-b-2">Company</th>
-                  <th className="py-3 px-5 border-r-2 border-white border-b-2">Title</th>
-                  <th className="py-3 px-5 border-r-2 border-white border-b-2">Years</th>
-                  <th></th>
+                <tr className="text-lg text-bold">
+                  <th className="py-3 px-3 border-r-2 border-white border-b-4">Company</th>
+                  <th className="py-3 px-3 border-r-2 border-white border-b-4">Title</th>
+                  <th className="py-3 px-3 border-r-2 border-white border-b-4">Years</th>
+                  <th>
+                    
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -131,7 +133,7 @@ const Dashboard = () => {
             </table>
             <h3 className="py-8 text-3xl font-semibold"> Education Credentials</h3>
             <table className="table-auto bg-gray-100">
-              <thead className="text-2xl border-b-2 border-white py-3">
+              <thead className="text-lg text-bold border-b-2 border-white py-3">
                 <tr>
                   <th className="py-3 px-5 border-r-2 border-white border-b-2">School</th>
                   <th className="py-3 px-5 border-r-2 border-white border-b-2">Degree</th>
@@ -177,7 +179,7 @@ const Dashboard = () => {
         ) : (
           <>
             <p className="text-xl pt-5 pb-7">No profile found. Do you want to create a profile?</p>
-            <Link to="/create-profile" className="button bg-sky-600 text-white">Create Profile</Link>
+            <Link to="/create-profile" className="button bg-cyan-600 text-white">Create Profile</Link>
           </>
         )}
       </div>
